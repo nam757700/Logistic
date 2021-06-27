@@ -1,0 +1,265 @@
+﻿/*Các xử lý định dạng cho provider.html*/
+@import url('basic.css');
+@import url('all.css');
+@import url('images.css');
+
+
+/*****************Header****************/
+
+.header{
+	background-color: rgba(0, 15, 30, 1);
+}
+.header .navbar a{
+	color:#fff;
+}
+.header .navbar a:hover {
+  color: #FFD700;
+  text-decoration: none;
+}
+.header .top{
+	color: 	#9FB6CD;
+	padding: 10px 0;
+	
+}
+.header .nav-link{
+	color: #fff ;
+	padding: 10px 0;
+	margin:10px 10px;
+}
+
+.header .menu .nav-item .nav-link{
+	color: #fff;
+}
+/**********INFOR****************/
+
+.banner .form-inline .form-control{
+	
+}
+
+.infomation .fas{
+	float:left;
+	font-size: 60px;
+	margin-right:10px;
+}
+.infomation{
+	background: rgba(50, 50, 50, 0.1); 
+	padding: 50 0;
+}
+/*sevices*/
+.services .icon-box {
+  text-align: center;
+  border: 1px solid #FFD700;
+  padding: 80px 20px;
+  transition: all ease-in-out 0.3s;
+}
+
+.services .icon-box .icon {
+  margin: 0 auto;
+  width: 64px;
+  height: 64px;
+  background: #FFD700;
+  border-radius: 5px;
+  transition: all .3s ease-out 0s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+  transform-style: preserve-3d;
+}
+
+.services .icon-box .icon i {
+  color: #fff;
+  font-size: 28px;
+}
+
+.services .icon-box .icon::before {
+  position: absolute;
+  content: '';
+  left: -8px;
+  top: -8px;
+  height: 100%;
+  width: 100%;
+  background: #FFD700;
+  border-radius: 5px;
+  transition: all .3s ease-out 0s;
+  transform: translateZ(-1px);
+}
+
+.services .icon-box h4 {
+  font-weight: 700;
+  margin-bottom: 15px;
+  font-size: 24px;
+}
+
+.services .icon-box h4 a {
+  color: #2c4964;
+}
+
+.services .icon-box p {
+  line-height: 24px;
+  font-size: 14px;
+  margin-bottom: 0;
+}
+
+.services .icon-box:hover {
+  background: 	#FFD700;
+  border-color: #FFD700;
+}
+
+.services .icon-box:hover .icon {
+  background: #fff;
+}
+
+.services .icon-box:hover .icon i {
+  color: #FFD700;
+}
+
+.services .icon-box:hover .icon::before {
+  background: #fff;
+}
+
+.services .icon-box:hover h4 a, .services .icon-box:hover p {
+  color: #fff;
+}
+
+
+/*--------------------------------------------------------------
+/*****************SECTIONs****************/
+.mycrop2{
+	width: 250px;
+	max-height: 600px;
+	overflow: hidden;
+}
+.mycrop2 img{
+	width: 100%;
+	height:500px;
+	
+}
+
+
+/*********Team*******/
+.crop-img4{
+	width:100%;
+	height: 400px;
+	overflow: hidden;
+}
+.team .container-md {
+  position: relative;
+  width: 100%;
+}
+
+.team .image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.team .overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(255, 255, 255, 0.5); 
+  overflow: hidden;
+  width: 100%;
+  height: 0;
+  transition: .5s ease;
+}
+
+.team .container-md:hover .overlay {
+  height: 30%;
+}
+
+.team .text {
+  color: black;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+/* recent */
+.crop-img1{ 
+	max-height: 300px;
+	overflow: hidden;
+}
+
+.crop-img5{
+	max-height:600px;
+}
+
+/* footer*/
+.footer a{
+	color:	#708090;
+}
+.footer a:hover{
+	color: #FFD700;
+	text-decoration: none;
+}
+
+/* Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) {
+	.top{
+		display:none;
+	
+	}
+	.header.card-img-overlay{
+		font-size:10px !important;
+	}
+	.banner .mycrop3{
+		width:100vw;
+		height:80vh;
+	}
+	.navbar-toggler{
+		background:rgba(255, 255, 255, 0.6) !important;
+	}
+	
+	.mycrop2{
+		width:100vw;
+		max-height:80vh;
+	}
+	.media-body{
+		font-size: 16px !important;
+	}
+	.media-body h5{
+		font-size:18px !important;
+	}
+	
+
+}
+
+
+/* Small devices (landscape phones, 576px and up)*/
+@media (min-width: 576px) and (max-width: 767.98px) {
+	.top{
+		display:none;
+	
+	}
+	.recent .crop-img1{
+		height:160px;
+		overflow:hidden;
+	}
+		.navbar-toggler{
+		background:rgba(255, 255, 255, 0.6) !important;
+	}
+	
+	
+}
+
+/* Medium devices (tablets, 768px and up)*/
+@media (min-width: 768px) and (max-width: 991.98px) {
+	
+}
+
+/* Large devices (desktops, 992px and up)*/
+@media (min-width: 992px) and (max-width: 1199.98px) {
+	
+}
+
+/* Extra large devices (large desktops, 1200px and up)*/
+@media (min-width: 1200px) {
+	
+}
